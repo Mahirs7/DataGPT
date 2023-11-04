@@ -1,10 +1,10 @@
 import './App.css';
-import { DataLoader } from './components/DataLoader';
+// import { DataLoader } from './components/DataLoader';
 
 function App() {
   return (
     <div className="App">
-      <DataLoader />
+      {/* <DataLoader /> */}
     </div>
   );
 }

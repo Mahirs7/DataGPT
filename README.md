@@ -1,5 +1,8 @@
 # DataGPT
 
-# Initial Commit
-hello
-helllllo
+# Workflow 
+
+- Create general app
+- Create data loader
+- Store data 
+- Create 
