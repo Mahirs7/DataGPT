@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../App.css';
    
 export function DataLoader() {
     const [file, setFile] = useState();
@@ -42,27 +43,39 @@ export function DataLoader() {
     const headerKeys = Object.keys(Object.assign({}, ...array));
 
     return (
-    <div style={{ textAlign: "center" }}>
-        <h1>REACTJS CSV IMPORT EXAMPLE </h1>
-        <form>
+    <div style={{
+        textAlign: "center",
+        backgroundColor: "#0a192f",
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%'
+        }}>
+        <form style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifySelf: 'center',
+            textAlign: 'center'
+        }}>
         <input
             type={"file"}
             id={"csvFileInput"}
             accept={".csv"}
             onChange={handleOnChange}
         />
-
         <button
             onClick={(e) => {
             handleOnSubmit(e);
             }}
+            className='Submit-button'
         >
-            IMPORT CSV
+            <p>
+                Submit
+            </p>
         </button>
         </form>
-
         <br />
-
         <table>
         <thead>
             <tr key={"header"}>
