@@ -1,9 +1,10 @@
 import './App.css';
 import { DataLoader } from './components/DataLoader';
-import React from 'react'
+import { TextInput } from './components/TextInput';
+import React from 'react';
 
 function App() {
-  const [text, setText] = React.useState('')
+  const [input, setInput] = React.useState('');
   return (
     <div className="App">
       <div className="App-header"> 
@@ -11,6 +12,10 @@ function App() {
           DataGPT
         </h1> 
       </div>
+      <TextInput input={input} onInputUpdate={(newInput) => {
+        setInput(newInput);
+        console.log(input)
+      }}/>
       <DataLoader />
     </div>
   );
