@@ -45,7 +45,6 @@ export function DataLoader() {
     return (
     <div style={{
         textAlign: "center",
-        backgroundColor: "#0a192f",
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
@@ -56,7 +55,8 @@ export function DataLoader() {
             display: 'flex',
             flexDirection: 'row',
             justifySelf: 'center',
-            textAlign: 'center'
+            textAlign: 'center',
+            width: 280,
         }}>
         <input
             type={"file"}
@@ -64,6 +64,7 @@ export function DataLoader() {
             accept={".csv"}
             onChange={handleOnChange}
             color={'transparent'}
+            style={{width: 130, marginRight: 20}}
         />
         <button
             onClick={(e) => {
