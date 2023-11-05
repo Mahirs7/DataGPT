@@ -63,6 +63,7 @@ export function DataLoader() {
             id={"csvFileInput"}
             accept={".csv"}
             onChange={handleOnChange}
+            color={'transparent'}
         />
         <button
             onClick={(e) => {
