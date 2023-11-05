@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../App.css';
+import './DataLoader.css';
    
 export function DataLoader() {
     const [file, setFile] = useState();
